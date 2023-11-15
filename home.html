@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <title>Portfolio MSI - Giesbers</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include jquery to be able to reuse the navigation bar code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 </head>
 
 <body>
@@ -16,10 +19,34 @@
     </div>
 
     <div class="navbar">
-        <a href="home.html" class="active">Home</a>
-        <a href="matilda.html">Matilda</a>
-        <a href="hieke.html">Hieke</a>
-        <a href="tomas.html">Tomas</a>
+        <a href="home.html" class="active">Smart Project</a>
+        <div class="dropdown">
+            <button class="dropbtn">Matilda
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="matilda_workshops.html">Workshops</a>
+                <a href="matilda_ontwikkeling.html">Smart me</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hieke
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="hieke_workshops.html">Workshops</a>
+                <a href="hieke_ontwikkeling.html">Smart me</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Tomas
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="tomas_workshops.html">Workshops</a>
+                <a href="tomas_ontwikkeling.html">Smart me</a>
+            </div>
+        </div>
     </div>
 
     <div class="row">
@@ -51,10 +78,6 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco.</p>
         </div>
-    </div>
-
-    <div class="footer">
-        <h2>Footer</h2>
     </div>
 
 </body>
