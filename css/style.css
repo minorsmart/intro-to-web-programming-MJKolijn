@@ -45,8 +45,7 @@ body {
   color: black;
 }
 
-/* Active/current link */
-.navbar a.active, .dropdown .dropbtn.active {
+#Home .home, #Matilda .matilda, #Hieke .hieke, #Tomas .tomas {
   background-color: #666;
   color: white;
 }
