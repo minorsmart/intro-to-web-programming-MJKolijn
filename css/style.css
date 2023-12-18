@@ -75,7 +75,7 @@ p {
   /* IE10 */
   flex: 30%;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Main column */
@@ -84,7 +84,26 @@ p {
   /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 20px;
+  padding: 40px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column tomas zijn deel */
+.side-tomas {
+  -ms-flex: 30%;
+  /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+/* Main column tomas zijn deel */
+.main-tomas {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 40px;
 }
 
 /* Dropdown container - needed to position the dropdown content */
