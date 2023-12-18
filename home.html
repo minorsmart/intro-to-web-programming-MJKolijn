@@ -6,55 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Include jquery to be able to reuse the navigation bar code -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body id = Home>
+<body id=Home>
 
     <div class="header">
-        <h1>My Website</h1>
-        <p>A <b>responsive</b> website created by me.</p>
+        <img class="logo" src="images/Logo Giesbers.png" alt="Het Giesbers logo">
     </div>
 
     <div id="nav-placeholder"></div>
 
     <div class="row">
         <div class="side">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
+            <h2>Over Giesbers</h2>
+            <p>Giesbers Ontwikkelen en Bouwen is een zelfstandig opererende dochten van Giesbers Groep Ontwikkelen en
+                Bouwen en is gevestigd aan de Nieuweweg in Wijchen. Het is een familiebedrijf, wat valt onder Trebbe. Ze
+                pakken kleinere, maar ook grote projecten aan op een maatschappelijk verantwoorde manier met oog voor
+                people, planet en prosperity. Giesbers expertise ligt in de vastgoed- en gebiedsontwikkeling, nieuwbouw,
+                meerjarig onderhoud en transformatie en renovatie in de volgende sectoren: wonen, commercieel vastgoed,
+                zorg & welzijn, onderwijs en sport & cultuur. Hierbij beheren ze de hele ‘vastgoedcyclus’ van initiatief
+                en haalbaarheid tot en met beheer en onderhoud.</p>
         </div>
         <div class="main">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
+            <h2>Het onderzoeksrapport</h2>
+            <iframe src="files/placeholder_projectbrief.pdf" name="onderzoeksrapport">
+                <p>Deze browser ondersteunt geen iFrames.</p>
+                <p>Open deze <a href="files/placeholder_projectbrief.pdf" target="_blank">link</a> om het onderzoeksrapport in te zien.</p>
+            </iframe>
+            <h2>Presentaties pitstops</h2>
+            <p>Linkjes naar presentaties pitstops?</p>
         </div>
     </div>
 
     <script>
         $(function () {
             $("#nav-placeholder").load("navigatie.html");
+            console.log("navigation bar loaded")
         });
     </script>
 

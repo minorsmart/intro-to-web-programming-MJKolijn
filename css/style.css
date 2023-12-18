@@ -8,11 +8,15 @@ body {
   margin: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding: 5% 5vh;
   text-align: center;
-  background: #1abc9c;
+  background-color: #2C62B5;
   color: white;
 }
 
@@ -40,12 +44,16 @@ body {
 }
 
 /* Change color on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: #ddd;
   color: black;
 }
 
-#Home .home, #Matilda .matilda, #Hieke .hieke, #Tomas .tomas {
+#Home .home,
+#Matilda .matilda,
+#Hieke .hieke,
+#Tomas .tomas {
   background-color: #666;
   color: white;
 }
@@ -79,13 +87,6 @@ body {
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
@@ -110,7 +111,7 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -135,6 +136,14 @@ body {
   display: block;
 }
 
+iframe {
+  width: 80%;
+  height: 100vh;
+  /* height: 1150px; */
+  border: none;
+  margin: 1% 10% 2% 10%;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {
@@ -142,10 +151,15 @@ body {
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+/* Responsive layout - when the screen is less than 500px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     width: 100%;
+  }
+
+  .dropdown-responsive {
+    display: flex;
+    justify-content: center;
   }
 }
