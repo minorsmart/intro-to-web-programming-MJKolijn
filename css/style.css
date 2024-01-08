@@ -17,6 +17,9 @@ p {
   padding: 5% 5vh;
   text-align: center;
   background-color: #2C62B5;
+  background-image: url("../images/Achtergrond.png");
+  background-size: contain;
+  background-repeat: repeat;
   color: white;
 }
 
