@@ -55,7 +55,11 @@ p {
 
 #Home .home,
 #Matilda .matilda,
-#Hieke .hieke,
+#Hieke .hieke {
+  background-color: #666;
+  color: white;
+}
+
 #Tomas .tomas {
   background-color: #666;
   color: white;
@@ -100,6 +104,16 @@ p {
   padding: 20px;
 }
 
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column tomas zijn deel */
+.side-hieke {
+  -ms-flex: 30%;
+  /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
 /* Main column tomas ontwikkeling zijn deel */
 .main-tomasontwikkeling {
   -ms-flex: 70%;
@@ -109,8 +123,26 @@ p {
   padding: 40px;
 }
 
+/* Main column tomas ontwikkeling zijn deel */
+.main-hiekeontwikkeling {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 40px;
+}
+
 /* Main column tomas zijn deel */
 .main-tomas {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 70px;
+}
+
+/* Main column tomas zijn deel */
+.main-hieke {
   -ms-flex: 70%;
   /* IE10 */
   flex: 70%;
