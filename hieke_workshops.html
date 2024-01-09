@@ -11,7 +11,28 @@
     <!-- Include jquery to be able to reuse the navigation bar code -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+    <style> 
+      .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
 
+        .main-hieke {
+      width: 60%; /* Pas dit aan afhankelijk van de gewenste breedte voor de tekst */
+    }
+
+    .logohieke {
+      width: 30%; /* Pas dit aan afhankelijk van de gewenste breedte voor de afbeelding */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    </style>
 <body id = Hieke>
 
     <div class="header">
@@ -23,7 +44,7 @@
 
     <div id="nav-placeholder"></div>
 
-    <div class="row">
+    <div class="container">
         <div class="main-hieke">
             <h2>Workshops</h2>
             <p>Om mijn persoonlijke en professionele ontwikkeling goed vast te stellen vertel ik hieronder wat ik het op gepakt en heb geleerd met behulp van de minor Smart industry en daarnaast bij het bedrijf Giesbers.</p>
@@ -40,7 +61,7 @@
                 </p>
                     <p> 2e kopje
                     </p>
-                    <img class="logo" src="images/Impact van technologie.jpg" alt="Impact van technologie" width="300" height="200">  
+                    <img class="logohieke" src="images/Impact van technologie.jpg" alt="Impact van technologie" width="300" height="200">  
                     
                     
                 <h4>Business Model Canvas</h4>
