@@ -105,7 +105,7 @@ p {
 }
 
 /* Create two unequal columns that sits next to each other */
-/* Sidebar/left column tomas zijn deel */
+/* Sidebar/left column hieke haar deel */
 .side-hieke {
   -ms-flex: 30%;
   /* IE10 */
@@ -123,7 +123,7 @@ p {
   padding: 40px;
 }
 
-/* Main column tomas ontwikkeling zijn deel */
+/* Main column hieke ontwikkeling haar deel */
 .main-hiekeontwikkeling {
   -ms-flex: 70%;
   /* IE10 */
@@ -141,21 +141,13 @@ p {
   padding: 70px;
 }
 
-/* Main column tomas zijn deel */
+/* Main column hieke haar deel */
 .main-hieke {
   -ms-flex: 70%;
   /* IE10 */
   flex: 70%;
   background-color: white;
   padding: 70px;
-}
-
-.main-hieke {
-  width: 60%;
-}
-
-.logohieke {
-  width: 30%;
 }
 
 /* Dropdown container - needed to position the dropdown content */
