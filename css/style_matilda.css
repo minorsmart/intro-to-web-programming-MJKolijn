@@ -1,0 +1,95 @@
+.workshopheader {
+    background-image: url("../images/WorkshopsAchtergrond.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.ontwikkelingheader {
+    background-image: url("../images/SmartMeAchtergrond.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.workshops {
+    margin: 2% 0% 2% 6.25%;
+    float: left;
+    width: 25%;
+    float: inline-block;
+    background-color: #AFC7EB;
+    border: none;
+}
+
+.ontwikkeling {
+    margin: 2% 0% 2% 37.5%;
+    float: left;
+    width: 25%;
+    float: inline-block;
+    background-color: #AFC7EB;
+    border: none;
+}
+
+.workshopimg img {
+    max-width: 50%;
+    min-width: 50%;
+    /* min-height: 300px;
+    max-height: 300px; */
+    height: auto;
+    display: block;
+    margin: 5% 25% 5% 25%;
+}
+
+.description {
+    padding: 0% 3% 3% 3%;
+    text-align: center;
+    font-size: 17px;
+}
+
+.description h3 {
+    font-size: 20px;
+}
+
+.button {
+    background-color: #2C62B5;
+    border: 2.5px solid #2C62B5;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.button:hover {
+    border: 2.5px solid #2C62B5;
+    background-color: #AFC7EB;
+    color: #000;
+}
+
+iframe {
+    width: 60%;
+    /* height: 1150px; */
+    border: none;
+    margin: 2% 20% 2% 20%;
+}
+
+
+#theDiv {
+    /* width: 600px; */
+    width: fit-content;
+    padding: 0px 5px;
+    border: solid 2px;
+    background-color: #AFC7EB;
+    margin: auto;
+}
+
+.main Matilda {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 70px;
+  }
+/* li {
+    display: list-item;
+    list-style-position: inside;
+} */
