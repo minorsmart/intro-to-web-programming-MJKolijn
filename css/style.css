@@ -150,6 +150,14 @@ p {
   padding: 70px;
 }
 
+.main-hieke {
+  width: 60%;
+}
+
+.logohieke {
+  width: 30%;
+}
+
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
   float: left;
