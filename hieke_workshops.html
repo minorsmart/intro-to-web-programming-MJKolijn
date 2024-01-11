@@ -25,7 +25,7 @@
     <div class="row">
         <div class="main-hieke">
             <h2>Workshops</h2>
-            <p>Om mijn persoonlijke en professionele ontwikkeling goed vast te stellen vertel ik hieronder wat ik het op gepakt en heb geleerd met behulp van de minor Smart industry en daarnaast bij het bedrijf Giesbers.</p>
+            <p>Om mijn persoonlijke en professionele ontwikkeling goed vast te stellen vertel ik hieronder wat ik heb op gepakt en heb geleerd met behulp van de minor Smart industry en daarnaast bij het bedrijf Giesbers.</p>
             <h2>Smart Business</h2>
             <p> Tijdens de lessen van Smart business zijn er veel verschillende aspecten aangekaart door de docenten maar ook door gastsprekers.
                 Dit vond ik erg leuk, omdat er hierdoor afwisseling kwam in de manier van informatie verkrijgen.
@@ -86,28 +86,86 @@
 
 
             <h2>Smart Technology</h2>
-            <p> inleiding
+            <p> Tijdens de lessen van Smart Technology zijn er veel verschillende aspecten aangekaart door de docenten maar ook door gastsprekers.
+                Ook hier vond ik dit erg fijn, omdat er hierdoor afwisseling kwam in de manier van informatie verkrijgen.
+                In deze lessen heb ik veel praktisch geleerd op mijn laptop. De lessen draaiden vooral om het project plant bewateringssysteem.
+                Hieronder staat eerst mijn reflectie over het programmeren van dit project en daarna de vervolgstappen.
             </p>
                 <h4>Project plant</h4>
-                    <p> In de eerste les van Smart Technologie werden we direct voorgesteld aan ons nieuwe project: het ontwerpen en programmeren van een geautomatiseerd plantbewateringssysteem met behulp van Visual Studio.
-                        Daarnaast was het plan om ook een 3D-behuizing voor het systeem te printen in latere lessen.
-                        Ik raakte enthousiast omdat we iets gingen maken dat we letterlijk in handen konden houden wanneer het af was.
-                        Tijdens de eerste les, waarbij we programmeerprincipes combineerden met het praktisch in elkaar zetten van het systeem, verliep het proces erg vlot.
-                        Hierdoor kon ik anderen naast me actief helpen wanneer ze vastliepen, wat bijdroeg aan een gezamenlijke groei in begrip en vaardigheden.
+                    <p> In de eerste les van Smart Technologie werden we direct voorgesteld aan ons nieuwe project: het ontwerpen en programmeren van een geautomatiseerd plantbewateringssysteem met behulp van Visual Studio Code.
+                        We kregen van de gastsprekers een site waarin een stappenplan stond voor het installeren van het gehele systeem en voor het programmeren ervan.
+                        Tijdens deze les, waarbij we dus de programmeerprincipes combineerden met het praktisch in elkaar zetten van het systeem, verliep het proces bij mezelf erg vlot ook al had ik nog nooit eerder met deze technologie te maken gehad op school.
+                        Doordat het mij soepel af ging kon ik anderen naast me actief helpen wanneer ze vastliepen, wat bijdroeg aan een gezamenlijke groei in begrip en vaardigheden.
                     </p>
-                    <p> Daarna maakte ik voor het eerst kennis met Eagle.
-                        In dit programma werkten we aan het ontwerpen van een compleet printplaatje dat we uiteindelijk moesten inleveren.
-                        We moesten zelf het systeem programmeren en het binnen bepaalde afmetingen ontwerpen.
+                    <p> De opdracht die we hadden, was het programmeren van een PCB-chip.
+                        Met deze PCB-chip kan het systeem automatisch je plant water geven wanneer de plant het nodig heeft, nadat de chip geprogrammeerd is.
+                        De printplaat was aanvankelijk nog een oefenversie, zodat we konden experimenteren met het programmeren van de PCB-chip die erop zat.
+                        Nadat we geoefend hadden en het programmeren hadden afgerond, mochten we beginnen met het ontwerpen van ons eigen printplaatje.
+                        Tot slot kan alle elektronica niet zomaar in een planten pot worden geplaatst.
+                        Om deze reden kregen we ook lessen over het ontwerpen en printen van een 3D-bakje waar ons eigen systeem in moest passen.
+                    </p>
+                    <p> Mijn aanpak was om te beginnen met het afzonderlijk programmeren van alle onderdelen van het systeem, zodat ik stap voor stap alles kon begrijpen.
+                        Neem bijvoorbeeld de vochtsensor.
+                        Elk onderdeel heeft zijn eigen code nodig.
+                        Bij de vochtsensor vond ik het bijzonder interessant om de verandering van vochtigheid ook daadwerkelijk op mijn laptop te zien.
+                        Wanneer je de sensor aanraakte, sprongen de getallen snel omhoog omdat onze handen vochtiger zijn dan de lucht.
+                        In de code kon je instellen dat wanneer het getal onder een bepaalde waarde kwam, het pompje zou aangaan om water aan de plant te geven.
+                        Hierdoor hoef je met dit systeem niet meer handmatig op de vochtigheid van de plantengrond te letten.
+                        Helaas heb ik geen foto's gemaakt van elke stap van het aanleggen met bedrading van deze onderdelen, zoals de vochtsensor.
+                        Wel heb ik een foto van het eindresultaat waarbij alles aan elkaar gekoppeld zit en werkt.
+                        Onderstaand zie je een foto waar de vochtsensor bovenin de afbeelding te zien is.
+                    </p>
+                    <img class="logo" src="link" alt="naam" width="300" height="200">  
+                    <p>Vervolgens kregen we de taak om al deze losse codes (onderdelen) in één volledige code te integreren.
+                        Hierbij liepen enkele zaken mis. Het lukte me wel om de vochtsensor toe te voegen, omdat ik deze nog open had staan.
+                        Vanuit dit startpunt voegde ik onderdelen toe, zoals het lampje en bijvoorbeeld het relais.
+                        In het begin ging dit goed, maar plotseling kreeg ik een foutmelding.
+                        Ik heb deze foutmelding naar meerdere personen doorgestuurd om erachter te komen hoe ik dit kon oplossen, maar helaas is dit niet gelukt.
+                        Zelf had ik ook niet de kennis of vaardigheden om dit op te lossen.
+                        Later in de minor, toen ik er tijd voor had, heb ik het nog een keer geprobeerd, maar helaas zonder succes.
+                    </p>
+              
+                <h4>Eagle</h4>
+                    <p> Gelukkig kon ik wel doorgaan met het ontwerp van mijn printplaatje, omdat ik hiervoor geen volledige werkende code nodig had.
+                        Ik ging verder in het programma Eagle, waar ik ook voor het eerst mee ging werken.
+                        In dit programma werkten we aan het ontwerpen van een volledig printplaatje dat we uiteindelijk moesten inleveren.
+                        Dit printplaatje zorgt ervoor dat we alle draden die we gebruikten bij het oefenen, verwerkten in het dunne plaatje.
+                    </p>
+                    <p> In dit programma ontwierpen we zelf het plaatje, bepaalden waar elk onderdeel kwam en hoe de verbindingen zouden lopen.
+                        Hierbij moesten we rekening houden met bepaalde afmetingen voor het plaatje.
                         Ik ging de uitdaging met mezelf aan om de kleinste printplaat van de hele klas te maken.
-                        Nadat het ontwerp klaar was, werden ze geproduceerd en ontvingen we er elk 10 terug.
+                        Nadat het ontwerp klaar was, werden de printplaatjes geproduceerd en ontvingen we er elk 10 terug.
                         Het bleek dat ik inderdaad de kleinste printplaat had ontworpen.
+                        Hieronder staat mijn ontwerp uit het programma Eagle en een foto van mijn printplaatje die ik geleverd heb gekregen.
                     </p>
-                    
-                    <img class="logo" src="link" alt="naam" width="300" height="200"> 
-                    <img class="logo" src="link" alt="naam" width="300" height="200"> 
-                    <img class="logo" src="link" alt="naam" width="300" height="200"> 
-                    <img class="logo" src="link" alt="naam" width="300" height="200"> 
-                    <img class="logo" src="link" alt="naam" width="300" height="200"> 
+                    <img class="logo" src="link" alt="naam" width="300" height="200">  
+                <h4>Praktijk</h4>
+                    <p> Wat ik vooral erg leuk vond, was toen we te horen kregen dat we de PCB-chip moesten vast solderen aan het zelfgemaakte printplaatje.
+                        We gingen naar een werkplek op de HAN in Arnhem en kregen allemaal een eigen soldeerbout.
+                        Ik moet zeggen dat dit me erg goed afging en dat ik er ook veel plezier in had.
+                        Hieronder zie je een afbeelding van de onderkant van mijn printplaatje nadat ik alles gesoldeerd had.
+                        Door alles te solderen maakte de chip contact met het printplaatje en kon hij niet meer verschuiven.
+                    </p>
+                    <img class="logo" src="link" alt="naam" width="300" height="200">  
+                    <p> Tot slot moesten we een 3D-bakje ontwerpen en printen, zoals ik hierboven al vermeld had.
+                        Dit bakje hebben we ontworpen in Solidworks.
+                        Van het programma Solidworks had ik al eerder gehoord, maar nog niet eerder mee gewerkt.
+                        We kregen les over de theoretische aspecten van de 3D-printer zelf en ook over het gebruik van het programma Solidworks.
+                        In het begin ging het mij niet heel goed af om met Solidworks te werken.
+                        Daarom ben ik thuis gaan oefenen, en bij de volgende les ging het veel beter.
+                        Helaas heb ik mijn ontwerp niet kunnen 3D-printen omdat er niet genoeg reserveringsplekken waren bij de 3D-printers.
+                        Daarom ben ik samen met Tomas gaan werken. We zijn samen naar de locatie gegaan om de 3D-printer te installeren en ons ontwerp te laten printen.
+                        Hieronder zie je een afbeelding met mijn eigen printplaatje en systeem in het bakje dat Tomas heeft ontworpen met mijn hulp.
+                    </p>
+                    <img class="logo" src="link" alt="naam" width="300" height="200">  
+                <h4>Terugblik</h4>
+                    <p> Na het reflecteren over wat ik heb geleerd, besef ik dat ik in een korte tijdsperiode veel kennis heb opgedaan.
+                        Mijn interesse was vanaf het begin al gewekt, waardoor ik bij elke les zeer aandachtig aanwezig was en snel nieuwe concepten kon begrijpen.
+                        In het begin speelde het idee door mijn hoofd van hoe ik dit alles voor elkaar zou krijgen.
+                        Desondanks is het me gelukt door stapsgewijs te werk te gaan en gebruik te maken van de kennis van mensen die er meer verstand van hadden, zodat ik van hen kon leren.
+                        Ik ben zeer trots op het leerproces dat ik heb doorgemaakt in deze minor.
+                        Echter, het is wel teleurstellend dat het me niet gelukt is om het volledige systeem operationeel te krijgen voor gebruik in een plant thuis.
+                    </p>
 
                 <h5>onderwerp</h5>
                     <div class="fakeimg" style="height:200px;">Image</div>
