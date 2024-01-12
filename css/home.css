@@ -1,0 +1,12 @@
+.header {
+    background-image: url("../images/Achtergrond.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.logo {
+    /* position: relative; */
+    max-height: 20vh;
+    max-width: 90%;
+    z-index: 2;
+}

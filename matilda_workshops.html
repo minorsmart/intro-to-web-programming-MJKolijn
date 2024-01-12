@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio - Matilda (Workshops)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_matilda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include jquery to be able to reuse the navigation bar code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id=Matilda>
+
+    <div class="header workshopheader">
+        <div id="theDiv">
+            <h1>Matilda Kolijn</h1>
+            <p>Studentnummer: 1651412</br>Studie: Food & Business</br>Minor: Smart Industry</p>
+        </div>
+    </div>
+
+    <div id="nav-placeholder"></div>
+
+    <div class="workshops">
+        <div class="workshopimg">
+            <img src="images/Smart_business.png" alt="plaatje workshop Smart Business">
+        </div>
+        <div class="description">
+            <h3>Smart Business</h3>
+            <p>Tijdens de workshops Smart Business heb ik geleerd over de onderwerpen: klantwaarde, waardepropositie,
+                lean en waarderealisatie.</p>
+            <a href="Matilda/matilda_smartbusiness.html" class="button">Lees meer</a>
+        </div>
+    </div>
+
+    <div class="workshops">
+        <div class="workshopimg">
+            <img src="images/Smart_connection.png" alt="plaatje workshop Smart Connection">
+        </div>
+        <div class="description">
+            <h3>Smart Connection</h3>
+            <p>Tijdens de workshops Smart Connection heb ik web design skills geleerd, die ik toegepast heb op deze
+                website. Ik heb deze website namelijk opgezet voor de groep. Daarnaast heb ik ook geleerd over
+                Application Programming Interface, data analytics, Artificial Intelligence en dashboarding (InfluxDB).
+            </p>
+            <a href="Matilda/matilda_smartconnection.html" class="button">Lees meer</a>
+        </div>
+    </div>
+
+    <div class="workshops">
+        <div class="workshopimg">
+            <img src="images/Smart_technology.png" alt="plaatje workshop Smart Technology">
+        </div>
+        <div class="description">
+            <h3>Smart Technology</h3>
+            <p>Bij de workshops Smart Technology heb ik geleerd om een IoT-schakeling te bouwen voor het automatiseren
+                van de lichtintensiteit en aarde-vochtigheid van een plant en daarbij ook een bijpassend bakje te
+                ontwerpen in Solidworks om vervolgens te 3D-printen.</p>
+            <a href="Matilda/matilda_smarttechnology.html" class="button">Lees meer</a>
+        </div>
+    </div>
+
+    
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("navigatie.html");
+        });
+    </script>
+
+</body>
+
+</html>

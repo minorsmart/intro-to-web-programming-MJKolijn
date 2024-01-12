@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Photo of the Day</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #0026ff2f;
+            color: #333;
+        }
+
+        h1 {
+            color: #004080;
+        }
+
+        #apod-content {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #apod-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>NASA Photo of the Day</h1>
+    <div id="apod-content">
+        <p>Loading...</p>
+    </div>
+
+    <script>
+        // NASA API key (replace with your own key)
+        const apiKey = 'X8yFpxyFTeH3AzYsygjhasWdEW6sqInK44csUsf8';
+
+        // NASA APOD endpoint
+        const apodEndpoint = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+
+        // Function to fetch and display the NASA APOD
+        async function fetchAPOD() {
+            try {
+                const response = await fetch(apodEndpoint);
+                const data = await response.json();
+
+                if (data.media_type === 'image') {
+                    document.getElementById('apod-content').innerHTML = `
+                        <h2>${data.title}</h2>
+                        <p>${data.date}</p>
+                        <img id="apod-image" src="${data.url}" alt="${data.title}">
+                        <p>${data.explanation}</p>
+                    `;
+                } else {
+                    document.getElementById('apod-content').innerHTML = `
+                        <h2>${data.title}</h2>
+                        <p>${data.date}</p>
+                        <iframe width="560" height="315" src="${data.url}" frameborder="0" allowfullscreen></iframe>
+                        <p>${data.explanation}</p>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error fetching NASA APOD:', error);
+                document.getElementById('apod-content').innerHTML = '<p>Error fetching NASA APOD. Please try again later.</p>';
+            }
+        }
+
+        // Call the fetchAPOD function when the page loads
+        document.addEventListener('DOMContentLoaded', fetchAPOD);
+    </script>
+</body>
+</html>
